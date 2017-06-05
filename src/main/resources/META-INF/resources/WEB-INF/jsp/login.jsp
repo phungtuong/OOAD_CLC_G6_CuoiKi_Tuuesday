@@ -39,13 +39,15 @@
 	<form action="login" method="POST">
 		<div class="lc-block">
 			<div>
-				<input type="text" class="style-4" name="username"
+				<input type="text" class="col-md-10" name="username"
 					placeholder="User Name" />
 			</div>
+			<h1></h1>
 			<div>
 				<input type="password" class="style-4" name="password"
 					placeholder="Password" />
 			</div>
+			<h1></h1>
 			<div>
 				<input type="submit" value="Sign In" class="button red small" />
 			</div>

@@ -428,9 +428,7 @@
 												<li class="rmItem rmFirst"><a
 													href="<c:url value="/home_page"/>"
 													class="rmLink rmRootLink"><span class="rmText">Home</span></a></li>
-												<li class="rmItem "><a
-													href="Portlets/MenuRad/index.html#"
-													class="rmLink rmRootLink"><span class="rmText">About</span></a>
+												<li class="rmItem ">
 													<div class="rmSlide">
 														<ul class="rmVertical rmGroup rmLevel1">
 															<li class="rmItem rmFirst"><a
@@ -468,7 +466,9 @@
 												<li class="rmItem rmLast"><a
 													href="<c:url value="/contact"/>" class="rmLink rmRootLink"><span
 														class="rmText">Contact</span></a></li>
-												
+												<li class="rmItem rmLast"><a
+													href="<c:url value="/logout"/>" class="rmLink rmRootLink"><span
+														class="rmText">Logout</span></a></li>
 											</ul>
 											<input
 												id="ctl06_portlet_800886a8-ccb5-40dd-813a-2c02ac0d2e92_RadMenu_ClientState"
@@ -503,10 +503,7 @@
 					 ${sidebar.content}
 					 </div>
 </div>
-<a href="<c:url value="/edit-webpage-${sidebar.page_id}"/>"
-							class="btn btn-primary ">EDIT 
-					
-							</a>
+
 
 <a	href="<c:url value="/admin" />"
 class="btn btn-info custom-width">Manager </a>

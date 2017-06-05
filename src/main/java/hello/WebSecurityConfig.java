@@ -11,6 +11,8 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
+import logout.*;
+
 @Configuration
 @EnableWebSecurity
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
@@ -43,7 +45,13 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
             	.defaultSuccessUrl("/home_page")
             	.failureUrl("/login?error")
             	.and()
-         
+            .logout()                                                                
+    			.logoutUrl("/my/logout")                                                 
+    			.logoutSuccessUrl("/my/index")  
+    			
+    			.invalidateHttpSession(true)                                             
+    			                                     
+    			.and()
         	.exceptionHandling()
     			.accessDeniedPage("/403");
     }
